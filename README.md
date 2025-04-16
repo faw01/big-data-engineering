@@ -25,7 +25,14 @@ def linear_search(data, key):
 
 ## Assignment 2: StopFire - Fire Prediction System
 
+![StopFire System Architecture](kafka.png)
+
 A comprehensive system for fire prediction and analysis using big data technologies developed for the StopFire campaign by Monash University. This system ingests, processes, and analyzes large amounts of sensor data from various Victorian cities to predict and prevent fires.
+
+The architecture diagram above shows the complete data pipeline:
+- **Part A**: Static data processing pipeline that loads historical climate and hotspot data into MongoDB using the designed data model
+- **Part B**: Real-time streaming pipeline with three Kafka producers feeding data to a Spark Streaming application that processes and stores data in MongoDB
+Both parts use the same data model and database, ensuring consistency across historical and real-time data processing.
 
 ### Project Overview
 
