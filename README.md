@@ -1,4 +1,4 @@
-# Data Engineering
+# Big Data Engineering
 
 This repository contains implementations for data engineering assignments focusing on big data management, processing, and analytics.
 
